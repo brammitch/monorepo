@@ -4,13 +4,15 @@
 
 This sample monorepo demonstrates the capability of using [Lerna](https://github.com/lerna/lerna) and [Yarn](https://github.com/yarnpkg/yarn) [Workspaces](https://classic.yarnpkg.com/en/docs/workspaces) to set up a [Create React App](https://github.com/facebook/create-react-app) monorepo with [CRACO](https://github.com/gsoft-inc/craco). This project is configured to use [TypeScript](https://github.com/microsoft/TypeScript), [ESLint](https://github.com/eslint/eslint), and [Prettier](https://github.com/prettier/prettier).
 
+The packages @namespace/app-one and @namespace/app-two are CRA apps, while @namespace/core is a collection of components that can be consumed by either app.
+
 ### Setup
 
 ##### Prerequisites
 
-Yarn is required for workspaces.
+Lerna and Yarn are required.
 
-`npm i -g yarn`
+`npm i -g lerna yarn`
 
 ##### Clone repo
 
@@ -27,6 +29,14 @@ Yarn is required for workspaces.
 To get import suggestions from the @namespace/core package, it will need to be built.
 
 `yarn build:core`
+
+##### Running
+
+To start one of the apps, use the scripts in the root package.json.
+
+`yarn start:one` or `yarn start:two`
+
+This will ensure that @namespace/core is compiled prior to being used by either of the apps.
 
 ### References
 
