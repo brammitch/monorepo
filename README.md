@@ -22,6 +22,12 @@ Yarn is required for workspaces.
 
 `yarn install`
 
+#### VSCode Import Suggestions
+
+To support get import suggestions from the @namespace/core package, build the package.
+
+`yarn build:core`
+
 ### References
 
 - [A guide through The Wild Wild West of setting up a mono repo with TypeScript, Lerna and Yarn Workspaces](https://medium.com/ah-technology/a-guide-through-the-wild-wild-west-of-setting-up-a-mono-repo-with-typescript-lerna-and-yarn-ed6a1e5467a)
