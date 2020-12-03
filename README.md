@@ -6,25 +6,25 @@ This sample monorepo demonstrates the capability of using [Lerna](https://github
 
 ### Setup
 
-#### Prerequisites
+##### Prerequisites
 
 Yarn is required for workspaces.
 
 `npm i -g yarn`
 
-#### Clone repo
+##### Clone repo
 
 ` git clone git@github.com:brammitch/monorepo.git`
 
-#### Installation
+##### Installation
 
 `cd monorepo`
 
 `yarn install`
 
-#### VSCode Import Suggestions
+##### VSCode Import Suggestions
 
-To support get import suggestions from the @namespace/core package, build the package.
+To get import suggestions from the @namespace/core package, it will need to be built.
 
 `yarn build:core`
 
