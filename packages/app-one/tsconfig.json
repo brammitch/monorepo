@@ -6,6 +6,6 @@
       "@namespace/core": ["../core"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "craco.config.js"],
   "references": [{ "path": "../core" }]
 }
