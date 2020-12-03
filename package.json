@@ -8,8 +8,11 @@
   },
   "scripts": {
     "build:core": "yarn workspace @namespace/core build",
-    "start:one": "yarn workspace @namespace/app-one start",
-    "start:two": "yarn workspace @namespace/app-two start",
+    "build:one": "yarn build:core && yarn workspace @namespace/app-one build",
+    "build:two": "yarn build:core && yarn workspace @namespace/app-two build",
+    "clean:core": "yarn workspace @namespace/core clean",
+    "start:one": "yarn build:core && lerna run --scope '{@namespace/core,@namespace/app-one}' watch --parallel",
+    "start:two": "yarn build:core && lerna run --scope '{@namespace/core,@namespace/app-two}' watch --parallel",
     "format:check": "prettier --check \"./**/*.{ts,tsx,js,json,jsx,css,scss,md}\"",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,js,json,jsx,css,scss,md}\"",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --color",

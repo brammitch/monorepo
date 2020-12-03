@@ -19,10 +19,10 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "craco start",
     "build": "craco build",
+    "clean": "rimraf build",
     "test": "craco test",
-    "eject": "craco eject"
+    "watch": "craco start"
   },
   "browserslist": {
     "production": [

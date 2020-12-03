@@ -1,11 +1,15 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "src",
-    "paths": {
-      "@namespace/core": ["../core"]
-    }
+    "baseUrl": "src"
   },
-  "include": ["src", "craco.config.js"],
-  "references": [{ "path": "../core" }]
+  "include": [
+    "src",
+    "craco.config.js"
+  ],
+  "references": [
+    {
+      "path": "../core"
+    }
+  ]
 }
