@@ -3,8 +3,9 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
-      "@mformant/common/*": ["../common/*"]
+      "@namespace/core": ["../core"]
     }
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [{ "path": "../core" }]
 }

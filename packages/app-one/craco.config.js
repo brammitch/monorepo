@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const path = require('path');
 const { getLoader, loaderByName } = require('@craco/craco');
-const absolutePath = path.join(__dirname, '../common');
+const absolutePath = path.join(__dirname, '../core');
 module.exports = {
   webpack: {
     alias: {},

@@ -7,8 +7,8 @@
     ]
   },
   "scripts": {
-    "start:a": "yarn workspace @mformant/test-app-a start",
-    "start:b": "yarn workspace @mformant/test-app-b start",
+    "start:one": "yarn workspace @namespace/app-one start",
+    "start:two": "yarn workspace @namespace/app-two start",
     "format:check": "prettier --check \"./**/*.{ts,tsx,js,json,jsx,css,scss,md}\"",
     "format:fix": "prettier --write \"./**/*.{ts,tsx,js,json,jsx,css,scss,md}\"",
     "lint:check": "eslint . --ext .js,.jsx,.ts,.tsx --color",

@@ -1,6 +1,5 @@
 import './App.css';
 import logo from './logo.svg';
-import Button from '@mformant/common/components/button';
 import LocalButton from 'components/LocalButton';
 
 function App(): JSX.Element {
@@ -21,7 +20,6 @@ function App(): JSX.Element {
         </a>
       </header>
       <br />
-      <Button label="Common Button" />
       <LocalButton label="Local Button" />
     </div>
   );
