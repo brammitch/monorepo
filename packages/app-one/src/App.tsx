@@ -1,6 +1,7 @@
+import { Button } from '@namespace/core';
+import LocalButton from 'components/LocalButton';
 import './App.css';
 import logo from './logo.svg';
-import LocalButton from 'components/LocalButton';
 
 function App(): JSX.Element {
   return (
@@ -21,6 +22,7 @@ function App(): JSX.Element {
       </header>
       <br />
       <LocalButton label="Local Button" />
+      <Button label="Core Button" />
     </div>
   );
 }

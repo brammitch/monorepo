@@ -1,8 +1,9 @@
+import { Button } from '@namespace/core';
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.svg';
 
-function App() {
+function App(): JSX.Element {
   return (
     <div className="App">
       <header className="App-header">
@@ -19,6 +20,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <br />
+      <Button label="Core Button" />
     </div>
   );
 }
