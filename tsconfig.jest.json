@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "commonjs",
+    "importHelpers": true,
+    "jsx": "react-jsxdev",
+    "paths": {
+      "src/*": ["packages/app-one/src/*", "packages/app-two/src/*", "packages/core/src/*"]
+    }
+  }
+}
