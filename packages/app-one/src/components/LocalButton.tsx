@@ -3,5 +3,5 @@ interface Props {
 }
 
 export default function LocalButton(props: Props): JSX.Element {
-  return <button>{props.label}</button>;
+  return <button data-testid="local-button">{props.label}</button>;
 }

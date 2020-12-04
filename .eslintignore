@@ -1,3 +1,23 @@
+# Workspace Root
 .vscode
-packages/core/dist
+coverage
 node_modules
+
+lerna-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# All packages
+packages/*/coverage
+packages/*/node_modules
+
+packages/*/.eslintcache
+
+# packages/app-one
+
+# packages/app-two
+
+# packages/core
+packages/core/dist
+
+packages/core/tsconfig.tsbuildinfo

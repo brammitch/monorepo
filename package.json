@@ -11,6 +11,10 @@
     "build:one": "yarn build:core && yarn workspace @namespace/app-one build",
     "build:two": "yarn build:core && yarn workspace @namespace/app-two build",
     "clean:core": "yarn workspace @namespace/core clean",
+    "coverage:one": "yarn workspace @namespace/app-one test --coverage",
+    "coverage:two": "yarn workspace @namespace/app-two test --coverage",
+    "test:one": "yarn workspace @namespace/app-one test",
+    "test:two": "yarn workspace @namespace/app-two test",
     "start:one": "yarn build:core && lerna run --scope '{@namespace/core,@namespace/app-one}' watch --parallel",
     "start:two": "yarn build:core && lerna run --scope '{@namespace/core,@namespace/app-two}' watch --parallel",
     "format:check": "prettier --check \"./**/*.{ts,tsx,js,json,jsx,css,scss,md}\"",
@@ -19,6 +23,7 @@
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --color --fix"
   },
   "devDependencies": {
+    "@octokit/core": "^3.2.4",
     "@typescript-eslint/eslint-plugin": "^4.9.0",
     "@typescript-eslint/parser": "^4.9.0",
     "eslint": "^7.14.0",
@@ -27,5 +32,6 @@
     "lerna": "^3.22.1",
     "prettier": "^2.2.1",
     "typescript": "^4.1.2"
-  }
+  },
+  "dependencies": {}
 }

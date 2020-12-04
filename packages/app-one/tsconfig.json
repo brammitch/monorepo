@@ -3,10 +3,7 @@
   "compilerOptions": {
     "baseUrl": "src"
   },
-  "include": [
-    "src",
-    "craco.config.js"
-  ],
+  "include": ["src", "./*.config.js"],
   "references": [
     {
       "path": "../core"

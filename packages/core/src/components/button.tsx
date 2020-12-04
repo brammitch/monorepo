@@ -3,5 +3,5 @@ interface Props {
 }
 
 export default function Button(props: Props): JSX.Element {
-  return <button>{props.label}</button>;
+  return <button data-testid="core-button">{props.label}</button>;
 }
