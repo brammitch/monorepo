@@ -7,12 +7,13 @@ const input = './src/index.ts';
 const external = [
   ...Object.keys(pkg.dependencies || {}),
   ...Object.keys(pkg.peerDependencies || {}),
+  'react/jsx-runtime',
 ];
 
 const plugins = [
   nodeResolve({
     browser: true,
-    extensions: ['.ts', 'tsx'],
+    extensions: ['.ts', '.tsx'],
   }),
   typescript({
     tsconfig: './tsconfig.build.json',
