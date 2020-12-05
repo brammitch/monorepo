@@ -9,6 +9,7 @@ yarn-error.log*
 
 # All packages
 packages/*/coverage
+packages/*/dist
 packages/*/node_modules
 
 packages/*/.eslintcache

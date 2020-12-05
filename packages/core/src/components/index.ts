@@ -1,1 +1,1 @@
-export * from './Button';
+export { BlueButton, RedButton } from 'components/Button';

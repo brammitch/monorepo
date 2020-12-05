@@ -2,13 +2,7 @@
 const { jsWithTs: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
-  collectCoverageFrom: [
-    '<rootDir>/**/*.{js,jsx,ts,tsx}',
-    '!<rootDir>/index.{js,jsx,ts,tsx}',
-    '!<rootDir>/*.config.{js,jsx,ts,tsx}',
-    '!<rootDir>/config/*.{js,jsx,ts,tsx}',
-    '!<rootDir>/coverage/*',
-  ],
+  collectCoverageFrom: ['<rootDir>/src/*.{js,jsx,ts,tsx}', '!<rootDir>/config/*.{js,jsx,ts,tsx}'],
   coverageDirectory: '<rootDir>/coverage',
   globals: {
     'ts-jest': {
@@ -20,7 +14,7 @@ module.exports = {
   },
   moduleFileExtensions: ['tsx', 'ts', 'jsx', 'js'],
   preset: 'ts-jest/presets/js-with-ts',
-  setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+  setupFilesAfterEnv: ['<rootDir>/src/setupTests.ts'],
   testMatch: ['**/*.(test|spec).(js|jsx|ts|tsx)'],
   transform: {
     ...tsjPreset.transform,

@@ -1,8 +1,8 @@
-interface Props {
+export interface BlueButtonProps {
   label: string;
 }
 
-export default function BlueButton(props: Props): JSX.Element {
+export function BlueButton(props: BlueButtonProps): JSX.Element {
   return (
     <button data-testid="core-button" style={{ backgroundColor: 'blue', color: 'white' }}>
       {props.label}

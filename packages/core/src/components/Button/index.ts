@@ -1,4 +1,2 @@
-import BlueButton from './BlueButton';
-import RedButton from './RedButton';
-
-export { BlueButton, RedButton };
+export { BlueButton } from './BlueButton';
+export { RedButton } from './RedButton';
