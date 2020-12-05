@@ -6,9 +6,17 @@ module.exports = {
     '<rootDir>/packages/*/src/**/*.{js,jsx,ts,tsx}',
     '!<rootDir>/packages/*/src/index.{js,jsx,ts,tsx}',
     '!<rootDir>/packages/*/src/reportWebVitals.{js,ts}',
+    '!<rootDir>/packages/core/dist/*',
+    '!<rootDir>/packages/core/src/*.config.{js,jsx,ts,tsx}',
+    '!<rootDir>/packages/core/src/setupTests.ts',
+    '!<rootDir>/packages/core/src/config/*',
   ],
   coverageDirectory: '<rootDir>/coverage',
-  coveragePathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/packages/*/src/node_modules/'],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/node_modules/',
+    '<rootDir>/packages/*/dist/',
+    '<rootDir>/packages/*/node_modules/',
+  ],
   globals: {
     'ts-jest': {
       tsconfig: '<rootDir>/tsconfig.jest.json',

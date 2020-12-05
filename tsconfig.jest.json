@@ -8,5 +8,6 @@
     "paths": {
       "src/*": ["packages/app-one/src/*", "packages/app-two/src/*", "packages/core/src/*"]
     }
-  }
+  },
+  "exclude": ["packages/core/dist/*"]
 }

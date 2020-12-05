@@ -5,10 +5,12 @@
     "composite": true,
     "declaration": true,
     "declarationMap": true,
+    "isolatedModules": false,
     "noEmit": false,
     "outDir": "dist",
+    "outFile": "dist/core.d.ts",
     "rootDir": "src"
   },
   "include": ["src"],
-  "exclude": ["../dist"]
+  "exclude": ["src/config", "src/*.config.js", "src/setupTests.ts", "src/**/__tests__"]
 }
