@@ -22,7 +22,7 @@
   },
   "scripts": {
     "build": "npx rollup -c rollup.config.js",
-    "clean": "rimraf dist && rimraf tsconfig.build.tsbuildinfo",
+    "clean": "rimraf dist",
     "test": "jest",
     "watch": "npx rollup -c -w"
   }

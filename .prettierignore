@@ -20,5 +20,3 @@ packages/*/.eslintcache
 
 # packages/core
 packages/core/dist
-
-packages/core/tsconfig.build.tsbuildinfo
