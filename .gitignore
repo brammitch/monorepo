@@ -7,6 +7,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # All packages
+packages/*/build
 packages/*/coverage
 packages/*/node_modules
 
@@ -19,4 +20,4 @@ packages/*/.eslintcache
 # packages/core
 packages/core/dist
 
-packages/core/tsconfig.tsbuildinfo
+packages/core/tsconfig.build.tsbuildinfo

@@ -1,0 +1,10 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "importHelpers": true,
+    "jsx": "react-jsxdev",
+    "module": "commonjs",
+    "rootDir": "."
+  }
+}

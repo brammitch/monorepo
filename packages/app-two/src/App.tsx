@@ -1,4 +1,4 @@
-import { Button } from '@namespace/core';
+import { RedButton } from '@namespace/core';
 import './App.css';
 import logo from './logo.svg';
 
@@ -20,7 +20,7 @@ function App(): JSX.Element {
         </a>
       </header>
       <br />
-      <Button label="Core Button" />
+      <RedButton label="Core Button" />
     </div>
   );
 }

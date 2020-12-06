@@ -1,4 +1,4 @@
-import { Button } from '@namespace/core';
+import { BlueButton } from '@namespace/core';
 import LocalButton from 'components/LocalButton';
 import './App.css';
 import logo from './logo.svg';
@@ -22,7 +22,7 @@ function App(): JSX.Element {
       </header>
       <br />
       <LocalButton label="Local Button" />
-      <Button label="Core Button" />
+      <BlueButton label="Core Button" />
     </div>
   );
 }
