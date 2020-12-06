@@ -5,6 +5,9 @@ import logo from './logo.svg';
 function App(): JSX.Element {
   return (
     <div className="App">
+      <p>
+        <RedButton label="Core Button" />
+      </p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -19,8 +22,6 @@ function App(): JSX.Element {
           Learn React
         </a>
       </header>
-      <br />
-      <RedButton label="Core Button" />
     </div>
   );
 }

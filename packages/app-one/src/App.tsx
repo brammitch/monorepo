@@ -6,6 +6,10 @@ import logo from './logo.svg';
 function App(): JSX.Element {
   return (
     <div className="App">
+      <p>
+        <LocalButton label="Local Button" />
+        <BlueButton label="Core Button" />
+      </p>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,9 +24,6 @@ function App(): JSX.Element {
           Learn React
         </a>
       </header>
-      <br />
-      <LocalButton label="Local Button" />
-      <BlueButton label="Core Button" />
     </div>
   );
 }
