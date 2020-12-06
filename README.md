@@ -36,7 +36,7 @@ To start one of the apps, use the scripts in the root package.json.
 
 `yarn start:one` or `yarn start:two`
 
-This will ensure that @namespace/core is compiled prior to being used by either of the apps.
+This will ensure that @namespace/core is compiled in watch mode, so any changes to @namespace/core or the app will trigger recompile/reload.
 
 ### References
 
